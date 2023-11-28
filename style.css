@@ -15,13 +15,14 @@
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 3fr 3fr;
 
 }
 
 .header{
     background-color: #16a34a;
     grid-column: 2 / 4;
+    align-items: center;
 }
 
 .container .header{
@@ -32,12 +33,14 @@
 
 .container .header .headerTop{
     display:grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    
 }
 
 .container .header .headerBottom{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .header button{
@@ -54,12 +57,41 @@
 .header ul {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-column: 3/5;
+
+}
+
+.profileImg{
+    height: 75px;
+    width:75px;
+}
+
+.profileImgSmall{
+    height: 25px;
+    width:25px;
+}
+
+.headerTopRight{
+    display:flex;
+    justify-content: right;
+    gap:25px;
+    margin-right: 25px;
+}
+
+.profileName{
+    font-size: 25px;
+    font-weight: 800;
 }
 
 .container .header .headerTop .searchBar{
     display:grid;
     grid-template-columns: 1fr 1fr;
     width:250px;
+}
+
+.headerTop .searchBarField{
+    width:450px;
+    border-radius: 5px;
 }
 
 .headerTop .profileImg{
@@ -84,13 +116,14 @@
     background-color: #052e16;
     grid-row: 1/4;
     grid-column: span 1;
+    
 }
-
 
 .sidebar .photo{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top:25px;
 }
 
 .side-link{
@@ -118,6 +151,7 @@
 .main{
     background-color: #bbf7d0;
     grid-column: 2/4;
+    padding:10px;
 }
 
 .container .main{
@@ -136,13 +170,14 @@
 
     display: grid;
     grid-template-rows: repeat(3,1fr);
-
+    width:250px;
 }
 
 .container .main .rightMain .trendingContainer{
 
     display: grid;
     grid-template-rows: repeat(auto-fit,minmax(50px,1fr));
+    width: 250px;
 
 }
 
@@ -152,6 +187,9 @@
     text-align: left;
     height:200px;
     margin: 10px;
+    border-radius: 5px;
+    border: black 1px solid;
+    padding: 15px;
 }
 
 .card p{
@@ -163,6 +201,7 @@
 .card p.title{
     font-size: 16px;
     font-weight:bold;
+    margin-bottom: 5px;
 
 }
 
@@ -172,6 +211,7 @@
     text-align: left;
     height:75px;
     padding: 15px;
+    border-radius: 5px
 }
 
 .card2 p{
@@ -194,6 +234,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding:15px;
+    border-radius: 5px
 
 }
 

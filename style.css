@@ -40,7 +40,22 @@
 .container .header .headerBottom{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container .headerBottomLeft{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.greetingTextTop{
+    font-weight: 800;
+}
+
+greetingTextBottom{
+    font-size: 25px;
+    font-weight: 800;
+
 }
 
 .header button{
@@ -124,6 +139,8 @@
     align-items: center;
     justify-content: center;
     margin-top:25px;
+    margin-left: 10px;
+    margin-right:10px;
 }
 
 .side-link{
@@ -241,8 +258,9 @@
 .card3 .profileImg{
     height:25px;
     width:25px;
-    background-color: yellow;
+    background-color: darkgreen;
     grid-row: 1/3;
+
 }
 
 .card3 .profileName{
